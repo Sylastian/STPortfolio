@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergi Tavartkiladze — Developer & 3D Artist</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(-45deg, #1f1f1f, #2a2a2a, #1f1f1f, #2a2a2a);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: blur(4px);
+      background-color: rgba(0,0,0,0.4);
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      color: #ddd;
+    }
+
+    .btn-github {
+      padding: 14px 30px;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(90deg, #4caf50, #81c784);
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn-github:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      background: linear-gradient(90deg, #81c784, #4caf50);
+      text-decoration: none;
+      color: #fff;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #4caf50;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    ul.skills li {
+      background: rgba(255,255,255,0.1);
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    ul.skills li:hover {
+      background: #4caf50;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px){
+      header h1 { font-size: 2.2em; }
+      header p { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sergi Tavartkiladze</h1>
+    <p>Developer & 3D Artist</p>
+    <a href="https://github.com/Sylastian" class="btn btn-github" target="_blank">View My GitHub</a>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a freelancer looking for exciting projects where I can combine programming and 3D artistry to build tools, automate workflows, and create stunning assets. I enjoy solving problems creatively and turning ideas into reality with Python, CSS, Java, Blender, HTML, and SQL.
+    </p>
+
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li>
+      <li>CSS</li>
+      <li>Moderate Java</li>
+      <li>Blender</li>
+      <li>HTML</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
