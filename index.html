@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sergi Tavartkiladze</title>
+<title>Sergi Tavartkiladze — Student & Aspiring Programmer</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
@@ -25,6 +25,8 @@ header{
 }
 
 h1{font-size:3rem;margin:0;}
+
+p{color:#aaa;}
 
 .btn{
   padding:12px 25px;
@@ -56,6 +58,35 @@ section{padding:60px 20px;max-width:900px;margin:auto;}
 .hidden{opacity:0;transform:translateY(40px);transition:0.8s;}
 .show{opacity:1;transform:translateY(0);}
 
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.skills div{
+  padding:10px 15px;
+  background:#111827;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.skills div:hover{
+  background:#4facfe;
+}
+
+.project{
+  background:#111827;
+  padding:20px;
+  border-radius:15px;
+  margin-top:15px;
+  transition:0.3s;
+}
+
+.project:hover{
+  transform:translateY(-5px);
+}
+
 /* flying meme */
 #flyingThing{
   position:fixed;
@@ -78,8 +109,10 @@ section{padding:60px 20px;max-width:900px;margin:auto;}
   <h1>Sergi Tavartkiladze</h1>
   <p>Student & Aspiring Programmer</p>
 
-  <a href="resume.pdf" class="btn btn-primary" target="_blank">Resume</a>
-  <a href="https://github.com/Sylastian" class="btn btn-secondary" target="_blank">GitHub</a>
+  <div>
+    <a href="resume.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+    <a href="https://github.com/Sylastian" class="btn btn-secondary" target="_blank">GitHub</a>
+  </div>
 
   <div class="image-slot">
     <!-- Will add image later -->
@@ -89,12 +122,37 @@ section{padding:60px 20px;max-width:900px;margin:auto;}
 
 <section class="hidden">
 <h2>About</h2>
-<p>I’m a student learning programming and building real skills step by step.</p>
+<p>I am a motivated student with strong communication skills and a growing interest in programming and technology. I enjoy learning new things and building projects step by step.</p>
 </section>
 
 <section class="hidden">
 <h2>Skills</h2>
-<p>Python, HTML, CSS, Java, SQL, Blender</p>
+<div class="skills">
+  <div>Python</div>
+  <div>HTML</div>
+  <div>CSS</div>
+  <div>Java</div>
+  <div>SQL</div>
+  <div>Blender</div>
+</div>
+</section>
+
+<section class="hidden">
+<h2>Projects</h2>
+<div class="project">
+  <strong>Portfolio Website</strong>
+  <p>This website showcasing my skills, resume, and future work.</p>
+</div>
+<div class="project">
+  <strong>Future Project</strong>
+  <p>More projects will be added here as I continue learning.</p>
+</div>
+</section>
+
+<section class="hidden">
+<h2>Contact</h2>
+<p>Email: sergitavartkiladzet@gmail.com</p>
+<p>Location: Tbilisi, Georgia</p>
 </section>
 
 <script>
@@ -110,7 +168,42 @@ const observer = new IntersectionObserver(entries=>{
 
 document.querySelectorAll('.hidden').forEach(el=>observer.observe(el));
 
-// Easter egg (1% chance on click)
+// Typing animation
+const words = ["Student & Aspiring Programmer", "Learning Web Development", "Building My Future"];
+const typeLine = document.createElement('div');
+typeLine.style.marginTop = "10px";
+document.querySelector('header').appendChild(typeLine);
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeLoop(){
+  const current = words[wordIndex];
+
+  if(!deleting){
+    charIndex++;
+    typeLine.textContent = current.slice(0,charIndex);
+    if(charIndex === current.length){
+      deleting = true;
+      setTimeout(typeLoop,1200);
+      return;
+    }
+  } else {
+    charIndex--;
+    typeLine.textContent = current.slice(0,charIndex);
+    if(charIndex === 0){
+      deleting = false;
+      wordIndex = (wordIndex+1)%words.length;
+    }
+  }
+
+  setTimeout(typeLoop, deleting?40:70);
+}
+
+typeLoop();
+
+// Easter egg (1% chance)
 document.body.addEventListener('click', ()=>{
   const random = Math.floor(Math.random()*100);
 
@@ -124,8 +217,7 @@ document.body.addEventListener('click', ()=>{
   }
 });
 
-// small console easter egg
-console.log("developer note: nothing to see here");
+console.log("dev note: ok who is checking the console?");
 
 </script>
 
