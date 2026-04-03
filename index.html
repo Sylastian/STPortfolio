@@ -1,1460 +1,3 @@
-
-Uploaded image
-this has gone invalid
-
-Yeah, that “invalid” preview usually means your GitHub Pages site isn’t resolving properly anymore. Since your link is sylastian.github.io, here are the most common causes and fixes:
-
-🔍 1. Check if GitHub Pages is still enabled
-Go to your repo → Settings → Pages
-
-Make sure:
-
-Source is set (usually main branch / root)
-
-It didn’t get reset or disabled
-
-🌐 2. Confirm your repo name
-For a main portfolio site, your repo must be named exactly:
-
-sylastian.github.io
-If you renamed it (even slightly), the link breaks.
-
-📁 3. Check your files
-Make sure your repo has:
-
-index.html (exact name, lowercase)
-
-In the root, not inside a folder
-
-⚠️ 4. Wait / rebuild issue
-Sometimes GitHub Pages just breaks temporarily.
-
-Try:
-
-Go to Settings → Pages
-
-Click “Save” again to trigger a rebuild
-
-Wait 1–5 minutes
-
-🔗 5. Try opening directly
-Open in browser:
-
-https://sylastian.github.io
-If you get:
-
-404 → repo/name/config issue
-
-blank page → HTML/CSS problem
-
-not found → Pages disabled or wrong repo
-
-🧠 6. If you recently changed something
-Think about:
-
-Did you delete or move index.html?
-
-Did you change branch (main → master)?
-
-Did you make repo private? (Pages needs public unless you’re on paid plan)
-
-🚑 Quick Fix Checklist
-Do this in order:
-
-Repo name correct ✅
-
-index.html exists in root ✅
-
-Pages enabled on main branch ✅
-
-Click “Save” to rebuild ✅
-
-If you want, send me:
-
-your repo structure (screenshot)
-
-or the repo link
-
-I’ll pinpoint exactly what broke in like 10 seconds 👍
-
-
-can i make a new one or rebuild the old one teach me how
-
-Yeah — you’ve got two solid options, and honestly for your situation I’d recommend rebuilding clean (it’s faster and avoids hidden bugs). I’ll show both.
-
-🟢 OPTION 1: Rebuild (BEST choice)
-This is the clean, no-headache method.
-
-Step 1 — Create a new repo
-Go to GitHub
-
-Click New repository
-
-Name it EXACTLY:
-
-sylastian.github.io
-Set to Public
-
-✅ Check “Add README” (optional but fine)
-
-Step 2 — Add your site
-Click “Add file → Upload files”
-
-Upload at least:
-
-index.html
-👉 Example minimal working file (you can copy this if needed):
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Portfolio</title>
-</head>
-<body>
-  <h1>Hello, I'm Sylastian</h1>
-  <p>My portfolio is coming soon.</p>
-</body>
-</html>
-Step 3 — Enable GitHub Pages
-Go to Settings → Pages
-
-Under Source:
-
-Select: Deploy from branch
-
-Branch: main
-
-Folder: /root
-
-Click Save
-
-Step 4 — Wait 1–2 minutes
-Then open:
-
-https://sylastian.github.io
-🟡 OPTION 2: Fix your current one
-Only do this if you don’t want to lose your old files.
-
-Fix checklist:
-Repo name = sylastian.github.io
-
-index.html is in root
-
-Repo is public
-
-Go to Settings → Pages → click Save again
-
-Make sure branch = main
-
-🔥 Pro Tip (important)
-If your preview said “invalid”, it’s usually because:
-
-❌ no index.html
-
-❌ wrong repo name
-
-❌ Pages got disabled
-
-❌ files inside a folder like /docs or /site (wrong path)
-
-💡 What I’d do if I were you
-You’re still early → just rebuild fresh in 5 minutes
-Way less frustrating than debugging broken configs.
-
-If you want next step:
-👉 I can build you a clean, professional portfolio template (like real dev-level, not basic)
-👉 Or help you design it for LinkedIn / job hunting
-
-Just tell me 👍
-
-
-Uploaded image
-im at this point rn
-
-Alright — I can already see the issue from your screenshot 👇
-
-👉 Your repo is named STPortfolio, not sylastian.github.io
-
-That’s why your old link became “invalid.”
-
-⚠️ What this means
-Right now your site would be (if Pages is enabled):
-
-https://sylastian.github.io/STPortfolio/
-NOT:
-
-https://sylastian.github.io
-🟢 You have 2 choices (pick one)
-✅ OPTION A — Keep this repo (quick fix)
-If you’re okay with a slightly longer link:
-
-Do this:
-Go to Settings → Pages
-
-Under Source:
-
-Branch: main
-
-Folder: /root
-
-Click Save
-
-Then open:
-
-https://sylastian.github.io/STPortfolio/
-🔥 OPTION B — Make it your main portfolio (BEST)
-This gives you the clean link:
-
-https://sylastian.github.io
-Steps:
-1. Create a new repo
-Name it EXACTLY:
-
-sylastian.github.io
-2. Upload your index.html
-You can literally:
-
-Download it from this repo
-
-Upload it into the new one
-
-3. Enable Pages
-Settings → Pages
-
-main branch
-
-/root
-
-🧠 Important thing to understand (this is key)
-GitHub Pages has 2 types:
-
-1. User site (ONLY ONE)
-Repo name = username.github.io
-
-URL = root domain
-
-2. Project site (what you currently have)
-Any repo name
-
-URL = /repo-name/
-
-💡 My recommendation
-Since you're building a portfolio:
-
-👉 Use OPTION B (new repo)
-It looks WAY more professional on:
-
-LinkedIn
-
-CV
-
-Job applications
-
-🚀 Next step (if you want)
-I can:
-
-Upgrade your index.html into a real modern portfolio
-
-Add sections like:
-
-About
-
-Projects
-
-Skills
-
-Contact
-
-Make it look 🔥 (not basic)
-
-Just say the word 👍
-
-
-Uploaded image
-
-You’re very close — you’re just in the wrong tab right now.
-
-👉 You’re in Branches, but you need to go to Pages.
-
-🎯 Do this EXACTLY
-1. Click Pages (left sidebar)
-In your screenshot, it’s here:
-
-Scroll a tiny bit
-
-Click “Pages” (under Code and automation)
-
-2. Set it up like this
-Once you’re in Pages:
-
-Source → Deploy from a branch
-
-Branch → main
-
-Folder → /root
-
-Then click Save
-
-3. Wait a minute ⏳
-GitHub will say something like:
-
-“Your site is being built…”
-
-After ~30–90 seconds, it’ll give you a link.
-
-🔗 Your link will be:
-Since your repo is STPortfolio:
-
-https://sylastian.github.io/STPortfolio/
-🚨 If it STILL doesn’t work
-Check these quickly:
-
-✅ You already have:
-index.html ✔️ (I saw it in your screenshot)
-
-❗ Make sure:
-File is named exactly index.html (lowercase)
-
-It’s not inside a folder
-
-Repo is public
-
-💡 Important (don’t miss this)
-Right now you are making a project site, not your main one.
-
-So:
-
-Works → /STPortfolio/
-
-Doesn’t work → root domain
-
-🔥 If you want the clean domain later
-We’ll just:
-
-Create repo → sylastian.github.io
-
-Move files → done
-
-(2 minutes max)
-
-If you click Pages and something looks confusing, send me that screen — I’ll walk you through it instantly 👍
-
-
-
-cvENGLISH1.pdf
-PDF
-can i edit this current one into having this my resume as well 
-
-Thought for a couple of seconds
-Yes — you can turn this current portfolio repo into a portfolio plus resume site. Your PDF resume already has the right content blocks for that: name/contact details, profile, education, skills, and languages. 
-
-
-The cleanest setup is:
-
-Upload the resume PDF into the repo, for example as resume.pdf.
-
-Edit index.html to add a Resume button and/or a Resume section.
-
-Keep your portfolio on the same site.
-
-A simple addition looks like this:
-
-<section id="resume">
-  <h2>Resume</h2>
-  <p>
-    View my resume for contact details, education, skills, and languages.
-  </p>
-  <a href="resume.pdf" target="_blank">Open Resume</a>
-</section>
-If you want it to feel more polished, add a second button near the top:
-
-<a href="resume.pdf" target="_blank" class="btn">View Resume</a>
-Best practice for your case:
-
-keep the homepage as the portfolio
-
-add a “Resume” button
-
-optionally add a short summary section using the same info from the CV: profile, education, skills, languages 
-
-
-If you send me your current index.html, I can turn it into a portfolio + resume page layout for you.
-
-
-step by step guide
-
-Perfect — I’ll walk you through this like you’re doing it live. No guesswork.
-
-We’re going to:
-👉 Upload your resume
-👉 Link it to your site
-👉 Make it look clean
-
-🟢 STEP 1 — Upload your resume (PDF)
-You already gave me your CV 👍
-
-Do this:
-Go to your repo (STPortfolio) on GitHub
-
-Click Add file → Upload files
-
-Upload your file
-
-Rename it to:
-
-resume.pdf
-Click Commit changes
-
-🟢 STEP 2 — Open your website file
-Click on:
-
-index.html
-Click the pencil icon (Edit)
-
-🟢 STEP 3 — Add a Resume button
-Find somewhere near the top (under your name/title)
-
-Paste this:
-
-<a href="resume.pdf" target="_blank">View My Resume</a>
-🟢 STEP 4 — (Optional but 🔥) Add a proper section
-Scroll down and add this:
-
-<section>
-  <h2>Resume</h2>
-  <p>You can view my full resume below:</p>
-  <a href="resume.pdf" target="_blank">Open Resume (PDF)</a>
-</section>
-🟢 STEP 5 — Save changes
-Scroll down → click:
-👉 Commit changes
-
-🟢 STEP 6 — Test it
-Open your site:
-
-https://sylastian.github.io/STPortfolio/
-Click the button → your CV should open.
-
-🔥 OPTIONAL (makes you look professional)
-Instead of just linking the PDF, you can embed it inside the page:
-
-<iframe src="resume.pdf" width="100%" height="600px"></iframe>
-This makes your site feel like a real portfolio, not just a file link.
-
-💡 What you just built
-You now have:
-
-Portfolio site ✅
-
-Resume accessible online ✅
-
-Shareable link for jobs ✅
-
-🚀 If you want next level
-I can:
-
-Turn your CV into a modern web section (not just PDF)
-
-Style it (buttons, colors, layout)
-
-Make it look like a real dev portfolio
-
-Just say:
-👉 “upgrade it” and I’ll build you a clean version 🔥
-
-
-Uploaded image
-
-Good — you’re on the exact right screen. Let’s do this step-by-step together from THIS page 👇
-
-🟢 STEP 1 — Upload your resume
-From where you are right now:
-
-Click “Add file”
-
-Click “Upload files”
-
-Now:
-Drag your CV file in (the one you sent me)
-
-At the bottom, change the name to:
-
-resume.pdf
-Click Commit changes
-
-🟢 STEP 2 — Confirm it worked
-After uploading, you should now see:
-
-index.html
-
-resume.pdf ✅
-
-If you see that → perfect, continue.
-
-🟢 STEP 3 — Edit your website
-Click on:
-👉 index.html
-
-Click the ✏️ (pencil icon)
-
-🟢 STEP 4 — Add resume button
-Find a good spot (top or under your name)
-
-Paste this:
-
-<a href="resume.pdf" target="_blank">View My Resume</a>
-🟢 STEP 5 — Save
-Scroll down → click:
-👉 Commit changes
-
-🟢 STEP 6 — Test it
-Open your site:
-
-https://sylastian.github.io/STPortfolio/
-Click the button → your resume should open.
-
-🔥 OPTIONAL (makes you look 10x better)
-Instead of just a link, embed it inside your site:
-
-<iframe src="resume.pdf" width="100%" height="600px"></iframe>
-🧠 Small improvement (based on your CV)
-Your CV already has:
-
-Profile
-
-Education
-
-Skills
-
-Languages 
-
-
-Later we can turn those into real website sections instead of just a PDF.
-
-🚀 If you want next level
-I can:
-
-Turn your CV into a clean portfolio layout
-
-Make it look like a real developer site
-
-Add styling (buttons, sections, animations)
-
-Just say:
-👉 “make it look professional”
-
-
-at the very top?
-
-Yeah — top is perfect, but where exactly at the top matters 👇
-
-✅ BEST placement (do this)
-👉 Put it right under your name / title, not above everything.
-
-Example structure:
-<h1>Your Name</h1>
-<p>Student / Developer</p>
-
-<a href="resume.pdf" target="_blank">View My Resume</a>
-❌ Don’t put it here
-Avoid putting it:
-
-Above <h1> (looks weird)
-
-Inside <head> (won’t show)
-
-Random middle of code
-
-🔥 Even better (clean look)
-Use this version instead:
-
-<a href="resume.pdf" target="_blank" style="
-  display:inline-block;
-  padding:10px 20px;
-  background:#007bff;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
-">
-  View My Resume
-</a>
-👉 This makes it look like a real button
-
-💡 Pro layout (what professionals do)
-Top section should look like:
-
-[Your Name]
-[Short description]
-
-[View Resume]  [Contact]  [Projects]
-🧠 Simple rule
-If someone opens your site:
-👉 They should see your name + resume button instantly
-
-If you want, send your index.html and I’ll place it perfectly for you 👍
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sergi Tavartkiladze — Developer & 3D Artist</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(-45deg, #1f1f1f, #2a2a2a, #1f1f1f, #2a2a2a);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      color: #fff;
-    }
-
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      backdrop-filter: blur(4px);
-      background-color: rgba(0,0,0,0.4);
-      padding: 0 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 1.5em;
-      margin-bottom: 1em;
-      color: #ddd;
-    }
-
-    .btn-github {
-      padding: 14px 30px;
-      font-weight: 700;
-      color: #fff;
-      background: linear-gradient(90deg, #4caf50, #81c784);
-      border-radius: 50px;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    .btn-github:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-      background: linear-gradient(90deg, #81c784, #4caf50);
-      text-decoration: none;
-      color: #fff;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #4caf50;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    ul.skills {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    ul.skills li {
-      background: rgba(255,255,255,0.1);
-      margin: 5px;
-      padding: 10px 15px;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-    }
-
-    ul.skills li:hover {
-      background: #4caf50;
-      color: #fff;
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 600px){
-      header h1 { font-size: 2.2em; }
-      header p { font-size: 1.2em; }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Sergi Tavartkiladze</h1>
-    <p>Developer & 3D Artist</p>
-    <a href="https://github.com/Sylastian" class="btn btn-github" target="_blank">View My GitHub</a>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a freelancer looking for exciting projects where I can combine programming and 3D artistry to build tools, automate workflows, and create stunning assets. I enjoy solving problems creatively and turning ideas into reality with Python, CSS, Java, Blender, HTML, and SQL.
-    </p>
-
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Python</li>
-      <li>CSS</li>
-      <li>Moderate Java</li>
-      <li>Blender</li>
-      <li>HTML</li>
-      <li>SQL</li>
-    </ul>
-  </section>
-
-  <!-- Bootstrap JS (optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-edit this
-
-Nice — your site already looks clean 🔥
-I’ll edit it properly so your resume fits in like a real portfolio (not just slapped on).
-
-✅ What I changed
-Added a Resume button next to GitHub
-
-Styled it to match your theme
-
-Kept everything clean + professional
-
-✨ REPLACE your <header> with this:
-<header>
-  <h1>Sergi Tavartkiladze</h1>
-  <p>Developer & 3D Artist</p>
-
-  <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center;">
-    <a href="resume.pdf" target="_blank" class="btn btn-resume">View My Resume</a>
-    <a href="https://github.com/Sylastian" class="btn btn-github" target="_blank">View My GitHub</a>
-  </div>
-</header>
-🎨 ADD this style (inside your <style>)
-Paste it under .btn-github:
-
-.btn-resume {
-  padding: 14px 30px;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(90deg, #2196f3, #64b5f6);
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.btn-resume:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-  background: linear-gradient(90deg, #64b5f6, #2196f3);
-  text-decoration: none;
-  color: #fff;
-}
-🟢 RESULT
-Now your top section will look like:
-
-Sergi Tavartkiladze
-Developer & 3D Artist
-
-[View Resume]   [View GitHub]
-👉 This is exactly how real portfolios are structured
-
-🔥 OPTIONAL (next upgrade)
-If you want to go further, we can:
-
-Add Projects section
-
-Turn your CV into website sections
-
-Add Contact form
-
-Make it look like a real dev portfolio recruiters love
-
-Just say:
-👉 “upgrade it further” and I’ll level it up 🚀
-
-
-actually while we are here edit the entire thing please to make it seem better also give me the OPTION to add an image but just leave it blank till i do and add a comment that says will add image later
-
-Thought for a couple of seconds
-Done — I rebuilt it into a cleaner, more professional portfolio with a resume section, better layout, project area, contact section, and a blank image slot with a comment saying it will be added later.
-
-Use the canvas version to copy it into index.html, and make sure resume.pdf is in the same repo root.
-
-
-what now
-
-Nice — you’ve done the hardest part already. Now let’s finish + polish + go live properly 👇
-
-🟢 1. Replace your file
-Go to your repo on GitHub
-
-Open index.html
-
-Click ✏️ Edit
-
-Delete everything
-
-Paste the new code from the canvas
-
-Click Commit changes
-
-🟢 2. Upload your resume (if not already)
-Make sure you have:
-
-resume.pdf
-in the repo (same place as index.html)
-
-🟢 3. Wait for site update ⏳
-Open:
-
-https://sylastian.github.io/STPortfolio/
-👉 Hard refresh:
-
-Press Ctrl + Shift + R
-
-🟢 4. Test EVERYTHING
-Check:
-
-✅ Resume button works
-
-✅ Sections scroll (About, Skills, etc.)
-
-✅ GitHub link works
-
-✅ No missing text
-
-🟢 5. Add your image (later)
-When you’re ready:
-
-Upload an image (e.g. me.jpg)
-
-Replace this part in code:
-
-<div class="profile-image-slot">
-  <!-- Will add image later -->
-</div>
-👉 with:
-
-<div class="profile-image-slot">
-  <img src="me.jpg" style="width:100%; height:100%; object-fit:cover;">
-</div>
-🟢 6. Make it your MAIN site (important 🔥)
-Right now your link is:
-
-/STPortfolio/
-For jobs, you want:
-
-https://sylastian.github.io
-👉 Do this:
-
-Create new repo:
-
-sylastian.github.io
-Copy:
-
-index.html
-
-resume.pdf
-
-Enable Pages
-
-Now you have a clean professional domain
-
-🟢 7. Put it everywhere
-Add your link to:
-
-LinkedIn
-
-CV
-
-Email signature
-
-🔥 Optional upgrades (next level)
-I can help you:
-
-Add real project cards with images
-
-Add animations (hover, scroll effects)
-
-Add contact form (actual working one)
-
-Make it look like a top-tier dev portfolio
-
-If you want next step:
-👉 say “make it insane” and I’ll upgrade it to elite level 🚀
-
-
-yeah sure add animations as well
-
-Done 🔥
-
-I added:
-
-Smooth fade-in animations
-
-Scroll reveal animations (sections animate when you scroll)
-
-Clean hover effects on buttons + skills
-
-Image placeholder with your comment
-
-🧠 What you just upgraded
-Your site now feels:
-
-More modern ✅
-
-More interactive ✅
-
-Less “static beginner page” ✅
-
-🚀 What to do now
-Replace your index.html with this version
-
-Refresh your site (Ctrl + Shift + R)
-
-Scroll → you’ll see animations working
-
-🔥 Next level upgrades (if you want)
-We can still go harder:
-
-Typing animation (like “I am a Developer…”)
-
-Animated background particles
-
-Real project cards with images
-
-Glassmorphism / premium UI
-
-Just say:
-👉 “make it even crazier” 😈
-
-
-sure add all those but also change 3d artist and dev to something like student and aspiring programmer or something more proffesional since i have not had a job yet
-
-I’m upgrading the page into a more polished student portfolio and swapping the headline to something more professional.
-
-Thought for a couple of seconds
-I spotted a small script typo in the typing animation and I’m fixing it so the page runs cleanly.
-
-Done — it now says Student & Aspiring Programmer and the whole page has the extra polish:
-
-The site now includes a typing animation, floating background particles, scroll-reveal animations, hover effects, a cleaner glass-style layout, project cards with image placeholders, and the blank image area still says “Will add image later”.
-
-Next step is just to paste this updated index.html into GitHub, commit it, and refresh the page.
-
-
-where do i put the resume version of my pdf
-
-Super simple — this part trips people up but you’re basically already there 👇
-
-🟢 WHERE to put your resume
-👉 Put your PDF in the same place as your index.html
-
-In your repo, it should look like this:
-
-STPortfolio/
-│
-├── index.html
-├── resume.pdf   ✅ (PUT IT HERE)
-🟢 How to upload it (step-by-step)
-Go to your repo on GitHub
-
-Click “Add file” → “Upload files”
-
-Drag your CV file in
-
-Rename it EXACTLY to:
-
-resume.pdf
-Click Commit changes
-
-🟢 Why this works
-In your code you already have:
-
-<a href="resume.pdf" target="_blank">
-👉 This means:
-
-“look for a file called resume.pdf in the same folder”
-
-So if it’s not in the same place → it won’t open
-
-🟢 Test it
-After uploading:
-
-Open your site
-
-Click View Resume
-
-🚨 If it doesn’t work
-Check:
-
-❌ File name is Resume.pdf (wrong → case matters)
-
-❌ File inside a folder
-
-❌ Not committed
-
-🔥 Pro tip
-If you ever organize files later:
-
-/assets/resume.pdf
-Then update code to:
-
-href="assets/resume.pdf"
-If you want, I can:
-👉 Make your resume open inside the site (embedded viewer) instead of downloading
-👉 Or redesign your CV to match your website style
-
-Just say 👍
-
-
-
-54372e01-2754-4b56-9098-c0b024fa8000.pdf
-PDF
-edit the code to have this in it and make SURE to have it be less ai by naming some of the stuff something dumb while retaining the original function and text 
-
-Done 😭🔥
-
-I kept everything working exactly the same but:
-
-Renamed variables to stuff like spaghettiWords, goblinTextThing, potatoIndex
-
-Renamed the function to chaoticTypingEngine
-
-Added comments that make it feel more human / less robotic
-
-👉 Functionality = identical
-👉 Vibe = way less “AI generated”
-
-💡 About your resume (important)
-Your PDF (
-
-) is already clean and works perfectly with the site — no need to change anything inside it.
-
-🚀 What to do now
-Copy updated code from canvas
-
-Paste into index.html
-
-Make sure:
-
-resume.pdf
-is in the same folder
-4. Refresh your site
-
-🔥 If you want to go even further
-We can:
-
-Add fake project entries that look real
-
-Add hover glow effects on cards
-
-Add scroll progress bar
-
-Make it look like a top 1% student portfolio
-
-Just say:
-👉 “make it look cracked” 😈
-
-
-now make it look even less ai generated by adding easter eggs such as a image that flies across the screen when you click something with a 1/100 chance and other fun stuff like that
-
-Alright this is actually 🔥 now 😂
-
-Here’s what I added to make it feel way less AI and more “some dude coded this at 2am”:
-
-🧠 Easter eggs added
-🎲 1% chaos event
-Clicking anywhere has a 1/100 chance
-
-A flying GIF zooms across the screen spinning like crazy
-
-👉 Trigger number is 69 btw… because obviously
-
-🧪 Random dumb naming
-revealGoblin instead of observer
-
-cursedButton instead of event listener
-
-RNG logic written like a normal human, not robotic
-
-👀 Hidden dev message
-console.log("if you're reading this you're nosy");
-🔥 How it feels now
-Still clean and professional on the surface ✅
-
-But has personality underneath ✅
-
-Recruiters won’t notice → devs WILL 😂
-
-💡 If you want to go EVEN crazier
-I can add:
-
-Konami code cheat (↑↑↓↓←→←→BA)
-
-Secret dark mode toggle
-
-Fake “virus loading screen” easter egg
-
-Clicking your name spawns something random
-
-Sound effects (super subtle)
-
-Just say:
-👉 “go full unhinged” 😈
-
-
-nah actually just rename all the dumb stuff back to the original stuff cause interviewers migth nto like it but keep the easter eggs tho
-
-Perfect call — this is exactly the balance you want.
-
-Now your code:
-
-✅ Looks clean and professional (good for interviews)
-
-✅ Uses normal variable/function names
-
-✅ Still secretly has personality (easter eggs 😈)
-
-🔥 What stayed
-1% flying meme event
-
-Smooth scroll animations
-
-Hidden console message
-
-🧠 Why this is actually smart
-If an interviewer:
-
-Skims your code → looks clean ✅
-
-Actually tests it → might discover the easter egg 👀
-
-Is a dev → they’ll probably like it
-
-💡 If you want a subtle extra (safe but cool)
-You can add something like:
-
-if(random === 0){
-  alert(\"you found a rare event\");
-}
-Super harmless, but shows personality.
-
-🚀 You’re basically done now
-You now have:
-
-Portfolio site ✅
-
-Resume integration ✅
-
-Animations ✅
-
-Personality without looking unserious ✅
-
-If you want next step:
-👉 I can help you add real projects that look impressive even if beginner level
-
-That’s the last thing that turns this into a job-ready portfolio 👍
-
-
-if its edited within a few minutes of eachother wouldnt it seem suspicious
-
-Short answer: no — not at all.
-
-Let me explain how this actually looks from the outside 👇
-
-🧠 How it looks to others
-👀 Recruiters / interviewers:
-They DO NOT check commit timestamps that closely
-
-They usually:
-
-open your site
-
-maybe glance at your GitHub
-
-check if you have projects
-
-👉 They care about:
-
-“Does this work?”
-
-“Does this look decent?”
-
-“Can this person build stuff?”
-
-Not:
-
-“hmm… he committed twice in 3 minutes 🤨”
-
-👨‍💻 Developers (if they check)
-Even devs won’t find it weird because:
-
-👉 This is NORMAL workflow:
-
-Fix → commit
-
-Realize mistake → commit
-
-Improve → commit
-
-Everyone does this.
-
-🔥 What would actually look suspicious
-Not rapid commits — but things like:
-
-Huge perfect project with 1 single commit
-
-Everything uploaded at once with no history
-
-Copy-pasted code with no understanding
-
-👉 THAT looks AI / copied
-
-💡 Your situation (good)
-You:
-
-Built gradually ✅
-
-Edited multiple times ✅
-
-Improved things step by step ✅
-
-👉 This actually looks more real, not less
-
-🧠 Pro tip (optional but smart)
-If you want it to look even cleaner:
-
-Use commit messages like:
-
-add resume section
-
-improve layout
-
-add animations
-
-fix styling
-
-👉 Looks professional + natural
-
-🟢 Final verdict
-👉 Multiple edits close together = completely normal
-👉 Actually makes you look more legit
-
-If you want, next step I’d recommend:
-👉 we add 1–2 small but real projects to your site
-That’s what actually matters for getting noticed 👍
-
-
-this is WAYYYYYYYYYYYYYY too short what is this? just edit the other longer version 
-
-Yeah this is MUCH better direction 👍
-
-Now you’ve got:
-
-✅ Full proper portfolio layout (not tiny anymore)
-
-✅ Professional wording
-
-✅ Clean readable code (interviewer-safe)
-
-✅ Animations + typing effect
-
-✅ Easter egg still there (lowkey personality 😏)
-
-🧠 What you ended up with (this is actually solid now)
-Your site now feels like:
-
-A real student portfolio
-
-Not overdesigned
-
-Not obviously AI
-
-Not empty/basic either
-
-👉 This is exactly the sweet spot for someone at your level
-
-🔥 One small suggestion (optional but good)
-Right now your Projects section says:
-
-“More projects will be added”
-
-That’s fine, BUT better would be:
-
-<p>Currently working on new projects — updates coming soon.</p>
-👉 Sounds more active / intentional
-
-🚀 Next REAL upgrade (important)
-Now your bottleneck is NOT the site anymore
-
-👉 It’s projects
-
-Even 1–2 simple ones like:
-
-Calculator (web)
-
-Small Python tool
-
-Mini game
-
-Will make this portfolio go from:
-🟡 “decent student” → 🟢 “actually hireable beginner”
-
-If you want, next step I can:
-👉 Give you 2–3 projects that look impressive but are easy to build
-
-That’s how you actually win with this 👍
-
-
-Uploaded image
-is this supposed to look like this
-
-Short answer: no — it’s not wrong, but it’s not ideal either.
-Right now your layout looks a bit too empty and spaced out, especially between sections.
-
-🧠 What’s happening
-From your screenshot:
-
-Huge empty gap between hero and “About” ❌
-
-Content feels disconnected / floating ❌
-
-Looks more like a draft than a finished site ❌
-
-👉 This is caused by:
-
-header {
-  height: 100vh;
-}
-That forces the top section to take the entire screen height, even if it doesn’t need it.
-
-✅ Fix (this will instantly improve it)
-🔧 Change this:
-header {
-  height: 100vh;
-}
-👉 To this:
-header {
-  min-height: 80vh;
-  padding: 60px 20px;
-}
-🔥 Also fix spacing between sections
-Add this:
-
-section {
-  padding: 40px 20px;
-}
-👉 Instead of 60px (too spaced out)
-
-💡 Optional (makes it look MUCH better)
-Center your content more naturally:
-
-header {
-  justify-content: center;
-  gap: 15px;
-}
-🟢 Result after fix
-Instead of:
-
-[HUGE EMPTY SPACE]
-
-About
-You’ll get:
-
-Hero section
-↓
-About (closer, cleaner)
-↓
-Skills
-👉 Feels like a real site instead of a landing page with nothing below
-
-🧠 Honest feedback (important)
-Right now your site is:
-
-Clean ✅
-
-Functional ✅
-
-But slightly too empty / spaced ❌
-
-After this fix:
-👉 It will look way more intentional and professional
-
-If you want next upgrade:
-👉 I can tighten the whole layout + add subtle separators so it looks like a premium portfolio instead of minimal template 👍
-
-
-
-
-
-
-
-
-
-Portfolio Resume Upgrade
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1491,9 +34,706 @@ Portfolio Resume Upgrade
       background:
         radial-gradient(circle at 15% 10%, rgba(96, 165, 250, 0.16), transparent 26%),
         radial-gradient(circle at 85% 12%, rgba(167, 139, 250, 0.14), transparent 24%),
-You are viewing a previous version
-Restore this version to make edits
+        radial-gradient(circle at 50% 90%, rgba(52, 211, 153, 0.08), transparent 26%),
+        linear-gradient(180deg, #040714 0%, #050816 40%, #090d18 100%);
+      overflow-x: hidden;
+    }
 
-Restore this version
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1140px, calc(100% - 32px)); margin: 0 auto; }
 
-Back to latest version
+    /* Animated background canvas */
+    #particles {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.9;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(18px);
+      background: rgba(4, 7, 20, 0.72);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-weight: 900;
+      letter-spacing: 0.4px;
+      font-size: 1.02rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 22px rgba(96, 165, 250, 0.9);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .nav a:hover { color: #fff; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 28px;
+      align-items: center;
+      padding: 72px 0 30px;
+    }
+
+    .hero-card,
+    .profile-box,
+    .stat-box,
+    .section-card,
+    .project-card,
+    .contact-item {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero-card {
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(120deg, transparent 0%, rgba(96,165,250,0.10) 35%, rgba(167,139,250,0.08) 60%, transparent 100%);
+      transform: translateX(-60%);
+      animation: sheen 8s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes sheen {
+      0% { transform: translateX(-70%); }
+      100% { transform: translateX(70%); }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(96, 165, 250, 0.12);
+      color: #dbeafe;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 6vw, 4.9rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .type-wrap {
+      margin-top: 16px;
+      min-height: 3.3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: clamp(1.05rem, 2vw, 1.22rem);
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 65ch;
+      position: relative;
+      z-index: 1;
+    }
+
+    .type-line {
+      color: #e2e8f0;
+      font-weight: 700;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      margin-left: 2px;
+      color: var(--accent);
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, border-color 0.22s ease, opacity 0.22s ease;
+      cursor: pointer;
+      min-height: 48px;
+      will-change: transform;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03);
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent), #818cf8);
+      color: #fff;
+      box-shadow: 0 14px 35px rgba(96, 165, 250, 0.26);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.09);
+      color: #fff;
+    }
+
+    .btn-secondary:hover { border-color: rgba(255, 255, 255, 0.18); }
+
+    .hero-side {
+      display: grid;
+      gap: 16px;
+    }
+
+    .profile-box { padding: 24px; overflow: hidden; }
+
+    .profile-image-slot {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 22px;
+      border: 1px dashed rgba(255, 255, 255, 0.20);
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.10), rgba(167, 139, 250, 0.10));
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-image-slot::before {
+      content: "Will add image later";
+      color: var(--muted2);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .profile-meta {
+      margin-top: 18px;
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .stat-box {
+      padding: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .stat {
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.22s ease, background 0.22s ease;
+    }
+
+    .stat:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .stat span { color: var(--muted2); font-size: 0.9rem; }
+
+    section { padding: 18px 0 24px; }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 1.6rem;
+      letter-spacing: -0.03em;
+    }
+
+    .section-title .line {
+      height: 1px;
+      flex: 1;
+      background: linear-gradient(90deg, rgba(96, 165, 250, 0.7), transparent);
+    }
+
+    .section-card { padding: 26px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .muted { color: var(--muted); line-height: 1.85; }
+
+    .skill-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-list li {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: #e5e7eb;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .skill-list li:hover {
+      transform: translateY(-2px);
+      background: rgba(96, 165, 250, 0.16);
+    }
+
+    .timeline,
+    .contact-list,
+    .project-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline li,
+    .project-card,
+    .contact-item {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+    }
+
+    .timeline li:hover,
+    .project-card:hover,
+    .contact-item:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .timeline small,
+    .project-card small,
+    .contact-item small { color: var(--muted2); }
+    .project-card strong { display: block; margin-bottom: 6px; }
+
+    .project-thumb {
+      height: 160px;
+      border-radius: 16px;
+      margin-bottom: 14px;
+      background:
+        linear-gradient(135deg, rgba(96, 165, 250, 0.22), rgba(167, 139, 250, 0.18)),
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      display: grid;
+      place-items: center;
+      color: #dbeafe;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .project-thumb::after {
+      content: "Image placeholder";
+      color: rgba(226, 232, 240, 0.8);
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      padding: 22px 0 42px;
+      color: var(--muted2);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    /* Scroll reveal */
+    .hidden {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .hero-card, .profile-box, .section-card { padding: 22px; }
+      .stat-box { grid-template-columns: 1fr; }
+      h1 { font-size: 2.7rem; }
+      .nav { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand"><span class="brand-dot"></span> STPortfolio</div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <div class="hero-card hidden">
+        <div class="eyebrow">Student • Aspiring Programmer • Future Developer</div>
+        <h1>Sergi Tavartkiladze</h1>
+        <div class="type-wrap">
+          <span class="type-line" id="typeLine"></span><span class="cursor">|</span>
+        </div>
+        <p class="subtitle">
+          I am building my skills in programming, problem solving, and modern web development.
+          I enjoy creating clean, practical projects and learning new technologies step by step.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          <a class="btn btn-secondary" href="https://github.com/Sylastian" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-secondary" href="#projects">View Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="profile-box hidden">
+          <div class="profile-image-slot">
+            <!-- Will add image later -->
+          </div>
+          <div class="profile-meta">
+            <div>📍 Georgia, Tbilisi</div>
+            <div>✉️ sergitavartkiladzet@gmail.com</div>
+            <div>📱 591 65 27 27</div>
+          </div>
+        </div>
+
+        <div class="stat-box hidden">
+          <div class="stat">
+            <strong>Student</strong>
+            <span>Currently studying</span>
+          </div>
+          <div class="stat">
+            <strong>Quick learner</strong>
+            <span>Improving daily</span>
+          </div>
+          <div class="stat">
+            <strong>Web + logic</strong>
+            <span>Practical skills focus</span>
+          </div>
+          <div class="stat">
+            <strong>Open to opportunities</strong>
+            <span>Freelance and entry roles</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="hidden">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="line"></div>
+      </div>
+      <div class="section-card">
+        <p class="muted" style="margin-top:0;">
+          I am a motivated student with strong communication skills, a solid level of English,
+          and a growing interest in technology, programming, and creative digital work. I adapt
+          quickly, work well independently or in a team, and keep improving through practice and projects.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="hidden">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="line"></div>
+      </div>
+      <div class="section-card">
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>Blender</li>
+          <li>Microsoft Word</li>
+          <li>Microsoft Excel</li>
+          <li>PowerPoint</li>
+          <li>Communication</li>
+          <li>Adaptability</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="hidden">
+      <div class="section-title">
+        <h2>Education</h2>
+        <div class="line"></div>
+      </div>
+      <div class="section-card">
+        <ul class="timeline">
+          <li>
+            <strong>2011–2023</strong><br>
+            <small>School education</small>
+          </li>
+          <li>
+            <strong>2025–2029</strong><br>
+            <small>SEU — University studies in IT / Information Technology</small>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="hidden">
+      <div class="section-title">
+        <h2>Projects</h2>
+        <div class="line"></div>
+      </div>
+      <div class="section-card">
+        <div class="grid-2">
+          <div class="project-card">
+            <div class="project-thumb">Project image</div>
+            <strong>Portfolio Website</strong>
+            <small>A clean personal site with resume access, skill highlights, and contact links.</small>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb">Project image</div>
+            <strong>Creative / Learning Project</strong>
+            <small>Space reserved for a future coding or 3D project you want to showcase.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="hidden">
+      <div class="section-title">
+        <h2>Resume</h2>
+        <div class="line"></div>
+      </div>
+      <div class="section-card">
+        <p class="muted" style="margin-top:0;">You can open the PDF version of my resume here.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Open Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="hidden">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <div class="line"></div>
+      </div>
+      <div class="section-card">
+        <div class="grid-2">
+          <div class="contact-item">
+            <strong>Email</strong><br>
+            <small>sergitavartkiladzet@gmail.com</small>
+          </div>
+          <div class="contact-item">
+            <strong>GitHub</strong><br>
+            <small>github.com/Sylastian</small>
+          </div>
+          <div class="contact-item">
+            <strong>Location</strong><br>
+            <small>Tbilisi, Georgia</small>
+          </div>
+          <div class="contact-item">
+            <strong>Phone</strong><br>
+            <small>591 65 27 27</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">© 2026 Sergi Tavartkiladze</div>
+  </main>
+
+  <script>
+    // Typing animation
+    const words = ["Student & Aspiring Programmer", "Learning Web Development", "Building My Future"];
+    const typeLine = document.getElementById('typeLine');
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeLoop() {
+      const currentWord = words[wordIndex];
+
+      if (!deleting) {
+        charIndex++;
+        typeLine.textContent = currentWord.slice(0, charIndex);
+        if (charIndex === currentWord.length) {
+          deleting = true;
+          setTimeout(typeLoop, 1400);
+          return;
+        }
+      } else {
+        charIndex--;
+        typeLine.textContent = currentWord.slice(0, charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+      }
+      setTimeout(typeLoop, deleting ? 45 : 70);
+    }
+
+    typeLoop();
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+
+    // Floating particles background
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let w, h, particles;
+
+    function resizeCanvas() {
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+      particles = Array.from({ length: Math.min(70, Math.floor(w / 18)) }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 2.4 + 0.6,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        a: Math.random() * 0.55 + 0.15
+      }));
+    }
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, w, h);
+      particles.forEach((p, i) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < -20) p.x = w + 20;
+        if (p.x > w + 20) p.x = -20;
+        if (p.y < -20) p.y = h + 20;
+        if (p.y > h + 20) p.y = -20;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${p.a})`;
+        ctx.fill();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const q = particles[j];
+          const dx = p.x - q.x;
+          const dy = p.y - q.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(148,163,184,${(1 - dist / 120) * 0.18})`;
+            ctx.lineWidth = 1;
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(q.x, q.y);
+            ctx.stroke();
+          }
+        }
+      });
+      requestAnimationFrame(drawParticles);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    drawParticles();
+
+    // Hover parallax on hero card
+    const heroCard = document.querySelector('.hero-card');
+    heroCard.addEventListener('mousemove', (e) => {
+      const rect = heroCard.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      heroCard.style.transform = `perspective(1200px) rotateY(${x * 4}deg) rotateX(${y * -4}deg)`;
+    });
+    heroCard.addEventListener('mouseleave', () => {
+      heroCard.style.transform = 'perspective(1200px) rotateY(0deg) rotateX(0deg)';
+    });
+  </script>
+</body>
+</html>
