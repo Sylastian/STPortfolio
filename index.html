@@ -1,74 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sergi Tavartkiladze — Student & Aspiring Programmer portfolio.">
-  <title>Sergi Tavartkiladze</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<title>STPortfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#050816;
+  --card:rgba(255,255,255,0.05);
+  --text:#fff;
+  --muted:#aaa;
+  --accent:#60a5fa;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(180deg,#050816,#0b1020);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* NAV */
+.topbar{
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.topbar-inner{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 0;
+}
+
+.nav a{
+  margin-left:15px;
+  color:var(--muted);
+}
+.nav a:hover{color:white}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.3fr 0.7fr;
+  gap:20px;
+  padding:60px 0;
+}
+
+.hero-card{
+  background:var(--card);
+  padding:30px;
+  border-radius:20px;
+  transition:.3s;
+}
+
+.hero-card:hover{
+  transform:translateY(-5px);
+}
+
+h1{
+  font-size:3rem;
+  margin:0;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin-top:10px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 18px;
+  border-radius:20px;
+  background:linear-gradient(90deg,#60a5fa,#818cf8);
+}
+
+/* SIDE */
+.profile-box,.stat-box{
+  background:var(--card);
+  padding:20px;
+  border-radius:20px;
+}
+
+.stat-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.stat{
+  background:rgba(255,255,255,0.03);
+  padding:10px;
+  border-radius:10px;
+}
+
+/* SECTIONS */
+section{
+  margin-top:40px;
+}
+
+.section-card{
+  background:var(--card);
+  padding:20px;
+  border-radius:20px;
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.project{
+  background:rgba(255,255,255,0.03);
+  padding:15px;
+  border-radius:12px;
+}
+
+/* PARTICLES */
+canvas{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+  .hero{grid-template-columns:1fr;}
+  .grid-2{grid-template-columns:1fr;}
+}
+</style>
 </head>
+
 <body>
 
-<canvas id="particles"></canvas>
+<canvas id="bg"></canvas>
 
-<header class="topbar">
-  <div class="container">
-    <div class="brand">STPortfolio</div>
-    <nav>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <strong>STPortfolio</strong>
+    <div class="nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-
-<section class="hero">
-  <div class="hero-text">
-    <h1>Sergi Tavartkiladze</h1>
-    <p id="type"></p>
-    <p class="subtitle">Aspiring developer focused on building real skills and projects.</p>
-    <div class="buttons">
-      <a href="#projects" class="btn">Projects</a>
-      <a href="https://github.com/Sylastian" class="btn">GitHub</a>
     </div>
   </div>
-</section>
+</div>
 
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-card" id="card">
+    <h1>Sergi Tavartkiladze</h1>
+    <p class="subtitle" id="typing"></p>
+
+    <a href="resume.pdf" class="btn">View Resume</a>
+  </div>
+
+  <div>
+    <div class="profile-box">
+      📍 Tbilisi, Georgia<br>
+      ✉️ sergitavartkiladzet@gmail.com
+    </div>
+
+    <div class="stat-box" style="margin-top:10px;">
+      <div class="stat">Student</div>
+      <div class="stat">Quick learner</div>
+      <div class="stat">Web dev</div>
+      <div class="stat">Open to work</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
 <section id="about">
-  <h2>About</h2>
-  <p>I am a motivated student learning programming and modern web development.</p>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>SQL</li>
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Portfolio Website</h3>
-    <p>This website you are viewing.</p>
+  <div class="section-card">
+    <h2>About</h2>
+    <p>
+      I am a motivated student learning programming and building projects step by step.
+    </p>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: sergitavartkiladzet@gmail.com</p>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-card">
+    <h2>Skills</h2>
+    <p>Python • HTML • CSS • Java • SQL</p>
+  </div>
 </section>
 
-</main>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-card">
+    <h2>Projects</h2>
 
-<script src="script.js"></script>
+    <div class="grid-2">
+      <div class="project">Portfolio Website</div>
+      <div class="project">Future Project</div>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<script>
+// typing effect
+const words=["Student & Aspiring Programmer","Learning Web Dev","Building My Future"];
+let i=0,j=0,del=false;
+const el=document.getElementById("typing");
+
+function loop(){
+  let w=words[i];
+  el.textContent=w.slice(0,j);
+
+  if(!del){ j++; if(j>w.length){del=true;setTimeout(loop,1200);return;} }
+  else{ j--; if(j==0){del=false;i=(i+1)%words.length;} }
+
+  setTimeout(loop,del?40:70);
+}
+loop();
+
+// particles
+const c=document.getElementById("bg");
+const ctx=c.getContext("2d");
+let w,h,p;
+
+function init(){
+  w=c.width=innerWidth;
+  h=c.height=innerHeight;
+  p=Array.from({length:60},()=>({
+    x:Math.random()*w,
+    y:Math.random()*h,
+    vx:(Math.random()-0.5)*0.5,
+    vy:(Math.random()-0.5)*0.5
+  }));
+}
+
+function draw(){
+  ctx.clearRect(0,0,w,h);
+  p.forEach(a=>{
+    a.x+=a.vx;
+    a.y+=a.vy;
+
+    if(a.x<0||a.x>w)a.vx*=-1;
+    if(a.y<0||a.y>h)a.vy*=-1;
+
+    ctx.fillRect(a.x,a.y,2,2);
+  });
+  requestAnimationFrame(draw);
+}
+
+init();
+draw();
+addEventListener("resize",init);
+
+// 3D hover
+const card=document.getElementById("card");
+card.onmousemove=e=>{
+  let r=card.getBoundingClientRect();
+  let x=(e.clientX-r.left)/r.width-0.5;
+  let y=(e.clientY-r.top)/r.height-0.5;
+  card.style.transform=`rotateY(${x*5}deg) rotateX(${y*-5}deg)`;
+};
+card.onmouseleave=()=>card.style.transform="";
+
+</script>
+
 </body>
 </html>
