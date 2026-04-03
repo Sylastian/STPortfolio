@@ -1,192 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sergi Tavartkiladze — Developer & 3D Artist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin:0;
-      font-family:'Inter',sans-serif;
-      background:#0b0f1a;
-      color:white;
-      overflow-x:hidden;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sergi Tavartkiladze — Student & Aspiring Programmer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-    /* FADE IN */
-    .fade-in {
-      opacity:0;
-      transform:translateY(30px);
-      animation:fadeUp 1s ease forwards;
-    }
+<style>
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#0b0f1a;
+  color:white;
+  overflow-x:hidden;
+}
 
-    @keyframes fadeUp {
-      to {
-        opacity:1;
-        transform:translateY(0);
-      }
-    }
+canvas{position:fixed;top:0;left:0;z-index:-1;}
 
-    /* HERO */
-    header {
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-    }
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(10px);
+  background:rgba(10,15,30,0.6);
+}
 
-    h1 {
-      font-size:3rem;
-      margin:0;
-      animation:fadeUp 1s ease forwards;
-    }
+nav a{
+  color:#ccc;
+  margin-left:20px;
+  text-decoration:none;
+}
 
-    p {
-      color:#aaa;
-      margin:10px 0 20px;
-      animation:fadeUp 1.2s ease forwards;
-    }
+nav a:hover{color:white;}
 
-    /* BUTTONS */
-    .btn {
-      padding:12px 25px;
-      border-radius:30px;
-      font-weight:600;
-      text-decoration:none;
-      margin:5px;
-      display:inline-block;
-      transition:0.3s;
-    }
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
 
-    .btn-primary {
-      background:linear-gradient(90deg,#4facfe,#00f2fe);
-      color:white;
-    }
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  min-height:80vh;
+}
 
-    .btn-secondary {
-      border:1px solid #555;
-      color:white;
-    }
+.hero-left{flex:1;}
+.hero-right{flex:1;}
 
-    .btn:hover {
-      transform:translateY(-3px) scale(1.05);
-    }
+.card{
+  background:rgba(20,30,60,0.6);
+  backdrop-filter:blur(12px);
+  padding:25px;
+  border-radius:20px;
+}
 
-    /* IMAGE SLOT */
-    .image-slot {
-      width:200px;
-      height:200px;
-      border:2px dashed #444;
-      border-radius:20px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      margin-top:20px;
-      color:#777;
-    }
+h1{font-size:3.5rem;margin:0;}
 
-    /* SECTION */
-    section {
-      padding:60px 20px;
-      max-width:900px;
-      margin:auto;
-    }
+#typeLine{color:#aaa;margin-top:10px;}
 
-    h2 {
-      margin-bottom:20px;
-      border-bottom:2px solid #4facfe;
-      display:inline-block;
-    }
+.btn{
+  padding:12px 25px;
+  border-radius:30px;
+  margin-top:15px;
+  display:inline-block;
+}
 
-    /* SKILLS */
-    .skills {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
+.btn-primary{background:linear-gradient(90deg,#4facfe,#00f2fe);color:white;}
+.btn-secondary{border:1px solid #555;color:white;}
 
-    .skills div {
-      padding:10px 15px;
-      background:#111827;
-      border-radius:20px;
-      transition:0.3s;
-    }
+.image-slot{
+  height:250px;
+  border:2px dashed #444;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+}
 
-    .skills div:hover {
-      background:#4facfe;
-    }
+section{margin-top:60px;}
 
-    /* SCROLL ANIMATION */
-    .hidden {
-      opacity:0;
-      transform:translateY(40px);
-      transition:all 0.8s ease;
-    }
+h2{border-bottom:2px solid #4facfe;}
 
-    .show {
-      opacity:1;
-      transform:translateY(0);
-    }
+.skills{display:flex;flex-wrap:wrap;gap:10px;}
+.skills div{background:#111827;padding:10px 15px;border-radius:20px;}
 
-  </style>
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+
+.project{background:#111827;padding:20px;border-radius:15px;}
+.project-img{height:150px;background:#333;border-radius:10px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;}
+
+.hidden{opacity:0;transform:translateY(40px);transition:0.8s;}
+.show{opacity:1;transform:translateY(0);}
+
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>Sergi Tavartkiladze</h1>
-  <p>Developer & 3D Artist</p>
+<canvas id="particles"></canvas>
 
+<nav>
+  <div><strong>STPortfolio</strong></div>
   <div>
-    <a href="resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
-    <a href="https://github.com/Sylastian" target="_blank" class="btn btn-secondary">GitHub</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="hero">
+  <div class="hero-left">
+    <h1>Sergi Tavartkiladze</h1>
+    <div id="typeLine"></div>
+    <p>Student & Aspiring Programmer</p>
+
+    <a href="resume.pdf" class="btn btn-primary">Resume</a>
+    <a href="https://github.com/Sylastian" class="btn btn-secondary">GitHub</a>
   </div>
 
-  <div class="image-slot">
-    <!-- Will add image later -->
-    Add image later
+  <div class="hero-right card">
+    <div class="image-slot">Add image later</div>
+    <p>📍 Tbilisi, Georgia</p>
+    <p>✉️ sergitavartkiladzet@gmail.com</p>
   </div>
-</header>
+</div>
 
-<section class="hidden">
-  <h2>About</h2>
-  <p>I am a student passionate about programming and 3D art, constantly improving and building new skills.</p>
+<section id="about" class="hidden">
+<h2>About</h2>
+<div class="card">
+<p>I am a motivated student building real programming skills and working toward becoming a professional developer.</p>
+</div>
 </section>
 
-<section class="hidden">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div>Python</div>
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>Java</div>
-    <div>SQL</div>
-    <div>Blender</div>
-  </div>
+<section id="skills" class="hidden">
+<h2>Skills</h2>
+<div class="card skills">
+<div>Python</div><div>HTML</div><div>CSS</div><div>Java</div><div>SQL</div><div>Blender</div>
+</div>
 </section>
 
-<section class="hidden">
-  <h2>Projects</h2>
-  <p>More coming soon...</p>
+<section id="projects" class="hidden">
+<h2>Projects</h2>
+<div class="grid">
+<div class="project">
+<div class="project-img">Project image</div>
+<strong>Portfolio Website</strong>
+<p>This portfolio showcasing my skills.</p>
+</div>
+<div class="project">
+<div class="project-img">Project image</div>
+<strong>Future Project</strong>
+<p>More coming soon.</p>
+</div>
+</div>
 </section>
 
-<section class="hidden">
-  <h2>Contact</h2>
-  <p>Email: sergitavartkiladzet@gmail.com</p>
+<section id="contact" class="hidden">
+<h2>Contact</h2>
+<div class="grid">
+<div class="card">Email: sergitavartkiladzet@gmail.com</div>
+<div class="card">GitHub: github.com/Sylastian</div>
+</div>
 </section>
+
+</div>
 
 <script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
-  });
+// typing
+const words=["Student & Aspiring Programmer","Learning Daily","Building Projects"];
+let i=0,j=0,del=false;
+const el=document.getElementById('typeLine');
+function type(){
+ let w=words[i];
+ if(!del){j++; if(j==w.length){del=true; setTimeout(type,1200); return;}}
+ else{j--; if(j==0){del=false;i=(i+1)%words.length;}}
+ el.textContent=w.slice(0,j);
+ setTimeout(type,del?40:70);
+}
+type();
 
-  document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+// scroll
+const observer=new IntersectionObserver(e=>{
+ e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')});
+});
+document.querySelectorAll('.hidden').forEach(el=>observer.observe(el));
+
+// particles
+const c=document.getElementById('particles');
+const ctx=c.getContext('2d');
+let w,h,p;
+function resize(){
+ w=c.width=window.innerWidth;
+ h=c.height=window.innerHeight;
+ p=Array.from({length:70},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}));
+}
+function draw(){
+ ctx.clearRect(0,0,w,h);
+ p.forEach(a=>{
+  a.x+=a.vx; a.y+=a.vy;
+  if(a.x<0||a.x>w)a.vx*=-1;
+  if(a.y<0||a.y>h)a.vy*=-1;
+  ctx.fillRect(a.x,a.y,2,2);
+ });
+ requestAnimationFrame(draw);
+}
+window.addEventListener('resize',resize);
+resize(); draw();
 </script>
 
 </body>
