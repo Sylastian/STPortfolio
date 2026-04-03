@@ -4,105 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sergi Tavartkiladze | Developer</title>
+<title>Sergi Tavartkiladze | Developer Portfolio</title>
 
-<meta name="description" content="Portfolio of Sergi Tavartkiladze — student developer focused on building real skills and practical projects.">
+<meta name="description" content="Portfolio of Sergi Tavartkiladze - aspiring developer building modern web projects.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
 
 <style>
-body{
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:#050816;
-  color:#f8fafc;
-  line-height:1.6;
-}
-
-.container{
-  width:90%;
-  max-width:1000px;
-  margin:auto;
-}
+body{margin:0;font-family:'Inter';background:#050816;color:white}
 
 /* NAV */
-.nav{
-  position:sticky;
-  top:0;
-  backdrop-filter:blur(10px);
-  padding:15px 0;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-}
+.nav{position:fixed;width:100%;top:0;padding:20px;backdrop-filter:blur(20px);display:flex;justify-content:space-between}
 
 /* HERO */
-.hero{
-  padding:80px 0 40px;
-}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
+h1{font-size:4rem}
 
-h1{
-  font-size:2.8rem;
-  margin:0;
-}
+/* CARDS */
+.card{background:rgba(255,255,255,0.05);padding:30px;border-radius:20px;margin:40px}
 
-.subtitle{
-  color:#94a3b8;
-  margin-top:10px;
-  max-width:600px;
-}
+/* PROJECTS */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project{padding:20px;background:#111;border-radius:15px}
+
+/* FORM */
+input,textarea{width:100%;margin-top:10px;padding:10px;border-radius:10px;border:none}
 
 /* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:10px 16px;
-  border-radius:10px;
-  background:#60a5fa;
-  transition:0.2s;
-}
+.btn{margin-top:15px;padding:12px;background:#60a5fa;border-radius:10px;cursor:pointer}
 
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-/* SECTIONS */
-section{
-  margin-top:50px;
-}
-
-.card{
-  background:rgba(255,255,255,0.04);
-  padding:25px;
-  border-radius:15px;
-  border:1px solid rgba(255,255,255,0.06);
-}
-
-/* PROJECT */
-.project{
-  margin-top:20px;
-}
-
-.project img{
-  width:100%;
-  border-radius:10px;
-  margin-bottom:10px;
-}
-
-.project h3{
-  margin:0;
-}
-
-.project p{
-  color:#94a3b8;
-  margin-top:5px;
-}
-
-/* FOOTER */
-.footer{
-  margin:60px 0;
-  color:#64748b;
-  font-size:0.9rem;
+@media(max-width:800px){
+.grid{grid-template-columns:1fr}
+h1{font-size:2.5rem}
 }
 </style>
 </head>
@@ -110,89 +47,60 @@ section{
 <body>
 
 <div class="nav">
-  <div class="container">
-    <strong>STPortfolio</strong>
-  </div>
+  <strong>STPortfolio</strong>
 </div>
 
-<div class="container">
-
-<!-- HERO -->
 <div class="hero">
-  <h1>Sergi Tavartkiladze</h1>
-
-  <p class="subtitle">
-    I’m a student currently learning programming and trying to get genuinely good at it — not just theory, but actually building things that work.
-    I’m still early in the process, but I take it seriously and improve consistently.
-  </p>
-
-  <a href="resume.pdf" class="btn">View Resume</a>
+  <div>
+    <h1>Sergi Tavartkiladze</h1>
+    <p>Aspiring Developer</p>
+  </div>
 </div>
 
-<!-- ABOUT -->
-<section>
-  <div class="card">
-    <h2>About Me</h2>
+<section class="card">
+<h2>Projects</h2>
 
-    <p>
-      I started getting into programming because I liked the idea of building things from nothing.
-      Right now I’m focused on fundamentals — understanding how things actually work, not just copying code.
-    </p>
-
-    <p>
-      I’m especially interested in web development and backend logic, and I try to practice every day, even if it’s something small.
-    </p>
-  </div>
+<div class="grid" id="projects"></div>
 </section>
 
-<!-- PROJECTS -->
-<section>
-  <div class="card">
-    <h2>Projects</h2>
+<section class="card">
+<h2>Contact Me</h2>
 
-    <div class="project">
-      <img src="https://via.placeholder.com/800x400" alt="project">
+<form id="form">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Message" required></textarea>
+<button class="btn">Send</button>
+</form>
 
-      <h3>Personal Portfolio Website</h3>
-
-      <p>
-        This site was built from scratch to learn layout, styling, and basic animations.
-        I focused on making it clean and readable rather than overcomplicated.
-      </p>
-    </div>
-
-    <div class="project">
-      <img src="https://via.placeholder.com/800x400" alt="project">
-
-      <h3>Upcoming Project</h3>
-
-      <p>
-        Currently working on improving my skills before building something more complex.
-      </p>
-    </div>
-
-  </div>
 </section>
-
-<!-- CONTACT -->
-<section>
-  <div class="card">
-    <h2>Contact</h2>
-
-    <p>Email: sergitavartkiladzet@gmail.com</p>
-    <p>GitHub: github.com/Sylastian</p>
-  </div>
-</section>
-
-<div class="footer">
-  © 2026 Sergi Tavartkiladze
-</div>
-
-</div>
 
 <script>
-gsap.from("h1",{y:30,opacity:0,duration:1});
-gsap.from(".card",{y:40,opacity:0,stagger:0.2,duration:1});
+// GITHUB PROJECTS
+fetch("https://api.github.com/users/YOUR_USERNAME/repos")
+.then(res=>res.json())
+.then(data=>{
+  const container=document.getElementById("projects");
+  data.slice(0,4).forEach(repo=>{
+    container.innerHTML+=`
+      <div class="project">
+        <h3>${repo.name}</h3>
+        <p>${repo.description || "No description"}</p>
+        <a href="${repo.html_url}" target="_blank">View</a>
+      </div>
+    `;
+  });
+});
+
+// FORM (EMAILJS REQUIRED)
+document.getElementById("form").onsubmit=e=>{
+  e.preventDefault();
+  alert("Message sent (connect EmailJS)");
+};
+
+// GSAP
+gsap.from("h1",{y:100,opacity:0,duration:1});
+gsap.from(".card",{scrollTrigger:".card",y:100,opacity:0,stagger:0.2});
 </script>
 
 </body>
